@@ -1,0 +1,7 @@
+build
+debugpy
+nbclassic
+notebook
+pyright
+twine
+git+https://github.com/kiyoon/jupynium.nvim@v0.2.1
