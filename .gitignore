@@ -1,0 +1,12 @@
+# JO3'S DEFAULT IGNORE RULES
+/tmp*
+## python
+/build/
+/dist/
+/*.egg-info/
+/.venv/
+__pycache__
+**.egg-info/
+**.ipynb_checkpoints
+## rust
+/target/

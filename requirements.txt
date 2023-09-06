@@ -1,7 +1,14 @@
 build
 debugpy
+pyright
 nbclassic
 notebook
-pyright
 twine
+openai
+pillow
+ipynbname
+google-search-results
 git+https://github.com/kiyoon/jupynium.nvim@v0.2.1
+ipycanvas
+orjson
+wikipedia

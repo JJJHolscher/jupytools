@@ -20,7 +20,7 @@ $(venv): $(venvbin) $(binlink) $(srclink)
 
 $(venvbin): $(activate) requirements.txt
 	. .venv/bin/activate && \
-	pip install -r requirements.txt
+	pip install -r requirements.txt \
 	touch $(venvbin)
 
 $(activate):
