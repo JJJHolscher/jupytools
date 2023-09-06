@@ -3,7 +3,15 @@
 name = "jupytools"
 version = "0.0.0" # TODO; automatically update versions by looking at git
 description = ""
-dependencies = []
+dependencies = [
+    "ipycanvas",
+    "openai",
+    "pillow",
+    "ipynbname",
+    "google-search-results",
+    "orjson",
+    "wikipedia"
+]
 dynamic = ["readme"]
 requires-python = ">=3.11"
 classifiers = [
