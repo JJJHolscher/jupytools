@@ -4,7 +4,11 @@ from pathlib import Path
 
 import ipynbname
 
-IPYNB_PATH = Path(ipynbname.path())
+try:
+    IPYNB_PATH = Path(ipynbname.path())
+    make_pmd = True
+except (AttributeError, IndexError):
+    make_pmd = False
 
 
 class CellReader:
@@ -39,4 +43,5 @@ class CellReader:
         return f["cells"]
 
 
-pmd = CellReader()
+if make_pmd:
+    pmd = CellReader()
