@@ -1,7 +1,11 @@
+from .ipy import web_gui
 from IPython.display import HTML, Markdown, display
 
 def show_md(string):
-    display(Markdown(string))
+    if web_gui:
+        display(Markdown(string))
+    else:
+        print(string)
 
 
 def show_html(string):

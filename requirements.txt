@@ -12,3 +12,4 @@ git+https://github.com/kiyoon/jupynium.nvim@v0.2.1
 ipycanvas
 orjson
 wikipedia
+git+file:///mnt/nas/git/jo3util

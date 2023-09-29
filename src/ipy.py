@@ -6,9 +6,9 @@ import ipynbname
 
 try:
     IPYNB_PATH = Path(ipynbname.path())
-    make_pmd = True
+    web_gui = True
 except (AttributeError, IndexError):
-    make_pmd = False
+    web_gui = False
 
 
 class CellReader:
@@ -43,5 +43,5 @@ class CellReader:
         return f["cells"]
 
 
-if make_pmd:
+if web_gui:
     pmd = CellReader()
